@@ -15,6 +15,9 @@
 		FAD61BB525F6702E00E18FEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAD61BB325F6702E00E18FEB /* LaunchScreen.storyboard */; };
 		FAD61BC025F6702E00E18FEB /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD61BBF25F6702E00E18FEB /* QueueTests.swift */; };
 		FAD61BCB25F6702E00E18FEB /* QueueUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD61BCA25F6702E00E18FEB /* QueueUITests.swift */; };
+		FAD61BDC25F6704800E18FEB /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD61BDB25F6704800E18FEB /* Queue.swift */; };
+		FAD61BE125F6821D00E18FEB /* QueueUsingLinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD61BE025F6821D00E18FEB /* QueueUsingLinkedList.swift */; };
+		FAD61BE625F6827800E18FEB /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD61BE525F6827800E18FEB /* Node.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		FAD61BC625F6702E00E18FEB /* QueueUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueueUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD61BCA25F6702E00E18FEB /* QueueUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueUITests.swift; sourceTree = "<group>"; };
 		FAD61BCC25F6702E00E18FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAD61BDB25F6704800E18FEB /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		FAD61BE025F6821D00E18FEB /* QueueUsingLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueUsingLinkedList.swift; sourceTree = "<group>"; };
+		FAD61BE525F6827800E18FEB /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +108,13 @@
 				FAD61BA825F6702D00E18FEB /* AppDelegate.swift */,
 				FAD61BAA25F6702D00E18FEB /* SceneDelegate.swift */,
 				FAD61BAC25F6702D00E18FEB /* ViewController.swift */,
+				FAD61BE525F6827800E18FEB /* Node.swift */,
 				FAD61BAE25F6702D00E18FEB /* Main.storyboard */,
 				FAD61BB125F6702E00E18FEB /* Assets.xcassets */,
 				FAD61BB325F6702E00E18FEB /* LaunchScreen.storyboard */,
 				FAD61BB625F6702E00E18FEB /* Info.plist */,
+				FAD61BDB25F6704800E18FEB /* Queue.swift */,
+				FAD61BE025F6821D00E18FEB /* QueueUsingLinkedList.swift */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD61BAD25F6702D00E18FEB /* ViewController.swift in Sources */,
+				FAD61BE125F6821D00E18FEB /* QueueUsingLinkedList.swift in Sources */,
 				FAD61BA925F6702D00E18FEB /* AppDelegate.swift in Sources */,
+				FAD61BE625F6827800E18FEB /* Node.swift in Sources */,
 				FAD61BAB25F6702D00E18FEB /* SceneDelegate.swift in Sources */,
+				FAD61BDC25F6704800E18FEB /* Queue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +450,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Queue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,6 +469,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Queue/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

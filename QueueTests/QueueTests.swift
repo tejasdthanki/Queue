@@ -10,6 +10,55 @@ import XCTest
 
 class QueueTests: XCTestCase {
 
+  
+    func testEmpty(){
+        let queue:Queue = Queue<Int>()
+        XCTAssertTrue(queue.array.isEmpty)
+        queue.enqueque(element: 2)
+        XCTAssertEqual(queue.front, 2)
+        XCTAssertFalse(queue.array.isEmpty)
+        
+        let queueList:QueueUsingLinkedList = QueueUsingLinkedList<Int>()
+        XCTAssertTrue(queueList.isEmpty)
+        queueList.enqueque(element: 2)
+        XCTAssertEqual(queueList.rear?.data, 2)
+        XCTAssertFalse(queueList.isEmpty)
+    }
+    
+    func testEnqueue(){
+        let queue:Queue = Queue<Int>()
+        queue.enqueque(element: 2)
+        queue.enqueque(element: 4)
+        queue.enqueque(element: 5)
+        XCTAssertEqual(queue.front, 2)
+        XCTAssertEqual(queue.totalCount, 3)
+        
+        let queueList:QueueUsingLinkedList = QueueUsingLinkedList<Int>()
+        queueList.enqueque(element: 2)
+        queueList.enqueque(element: 4)
+        queueList.enqueque(element: 5)
+        XCTAssertEqual(queueList.front?.data, 2)
+        XCTAssertEqual(queueList.count, 3)
+    }
+    
+    func testDequeue(){
+        let queue:Queue = Queue<Int>()
+        XCTAssertNil(queue.dequeue())
+        queue.enqueque(element: 2)
+        queue.enqueque(element: 4)
+        _ = queue.dequeue()
+        _ = queue.dequeue()
+        XCTAssertTrue(queue.array.isEmpty)
+        
+        let queueList:QueueUsingLinkedList = QueueUsingLinkedList<Int>()
+        queueList.enqueque(element: 2)
+        queueList.enqueque(element: 4)
+        queueList.dequeue()
+        queueList.dequeue()
+        XCTAssertTrue(queueList.isEmpty)
+        
+        
+    }
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
